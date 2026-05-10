@@ -1,0 +1,89 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-[Arial] bg-[#D8D8D8]">
+  <nav class="fixed w-full bg-gradient-to-br from-red-100 via-red-600 to-red-900 flex items-center justify-between p-3 z-50">
+    <div class="text-white text-xl font-bold flex items-center gap-2">
+      <img src="Pictures/info/1.png" alt="Icon" class="w-6 h-6 object-cover">
+      <p class="text-black">Christhoff Viliaan</p>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="Index.html" class="nav-link">Info</a>
+      <a href="Hobbies.html" class="nav-link">Hobbies</a>
+      <a href="Images.html" class="nav-link">Images</a>
+    </div>
+  </nav>
+
+
+
+  <div class="flex">
+    <button id="button" class="fixed top-12 left-7 bg-black text-white p-2 transition-all duration-300 z-0 translate-x-40">☰</button>
+    <aside id="sidebar" class="fixed top-12 left-0 h-screen w-48 bg-gray-800 text-white p-4 transition-transform duration-300 z-0 translate-x-0">
+      <a href="#section1" class="mb-2 side">- Information</a>
+      <a href="#section2" class="mb-2 side">- Origin</a>
+      <a href="#section3" class="mb-2 side">- Fun Fact</a>
+    </aside>
+  </div>
+
+
+  <main id="main" class="ml-48 pt-8 transition-all duration-300">
+
+
+    <div id="section1" class="pageSize">
+      <div class="title">Information</div>
+      <div class=" flex flex-col items-center lg:flex-row gap-6">
+        <div class="slider flex-1 min-w-[120px] max-w-[450px] aspect-square" data-images="Pictures/info/2.png, Pictures/info/3.png, Pictures/info/4.png">
+          <img src="Pictures/info/2.png" class="w-full object-cover rounded-xl">
+        </div>
+        <div class=" flex flex-col gap-6 items-stretch">
+          <div class=" flex flex-row gap-6 items-stretch justify-between">
+            <div class="text-Background min-w-[220px] lg:pr-16"><p class="text">
+              Name: Christhoff Viliaan<br>
+              Birthdate: 10th April 2007<br>
+              Religion: Christian<br>
+              Height: 181,3 cm (6')<br>
+              Weight: 79,2 KG (174,6 lbs)
+            </p></div>
+            <div class="flex-1 min-w-[100px] max-w-[150px] lg:max-w-[200px] "><img src="Pictures/info/1.png" class="w-full block aspect-[3/4] object-cover"></div>
+          </div>
+        <div class="text-Background h-full"><p class="text">I have only 1 sibling, a sister who is 5 years younger then me</p></div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    <div id="section2" class="pageSize bg-[#C2C2C2]">
+      <div class="title">Origin</div>
+      <div class=" flex flex-col items-center justify-center lg:flex-row gap-6">
+        <div class="text-Background max-w-[550px] lg:my-8"><p class="text">My birth place is not Indonesia but actually America. My parents went to America for business for 3 years and i was born in those early days. After around 2.5 years, my parents decided to go back to their homeland Indonesia. Amongst my entire family i am the only one who is from America. However some family members from my mothers side still live in America.</p></div>
+        <div class="slider flex-1 w-full min-w-[320px] aspect-square max-w-[450px]" data-images="Pictures/info/5.png, Pictures/info/6.png">
+          <img src="Pictures/info/5.png" class=" object-cover rounded-xl">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="section3" class="pageSize">
+      <div class="title">Fun Fact</div>
+      <div class=" flex flex-col lg:flex-row gap-6 items-center">
+        <div class=" flex flex-col gap-6">
+          <div class="slider flex 1 min-w-[220px] max-w-[250px] aspect-square" data-images="Pictures/info/7.png, Pictures/info/8.png">
+            <img src="Pictures/info/7.png" class="object-cover rounded-xl">
+          </div>
+          <div class="slider flex 1 min-w-[220px] max-w-[250px] aspect-square" data-images="Pictures/info/9.png, Pictures/info/10.png">
+            <img src="Pictures/info/9.png" class="object-cover rounded-xl">
+          </div>
+        </div>
+        <div class="text-Background min-w-[220px] max-w-[550px] lg:my-16 lg:ml-16"><p class="text">Throughout my life, i had a total of 4 fractured bones by the age of 15. Which is twice the average for a person's entire life.<br><br>My parents, and particularly my mother, believes that these are terrible memories but i believe that these are unique experiences and memories instead of seeing this as a bad thing.</p></div>
+      </div>
+    </div>
+    </main>
+<script src="JavaScript.js"></script>
+</body>
+</html>

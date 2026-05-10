@@ -1,0 +1,80 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-[Arial] bg-[#D8D8D8]">
+  <nav class="fixed w-full bg-gradient-to-br from-red-100 via-red-600 to-red-900 flex items-center justify-between p-3 z-50">
+    <div class="text-white text-xl font-bold flex items-center gap-2">
+      <img src="Pictures/info/1.png" alt="Icon" class="w-6 h-6 object-cover">
+      <p class="text-black">Christhoff Viliaan</p>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="Index.html" class="nav-link">Info</a>
+      <a href="Hobbies.html" class="nav-link">Hobbies</a>
+      <a href="Images.html" class="nav-link">Images</a>
+    </div>
+  </nav>
+
+
+
+  <div class="flex">
+    <button id="button" class="fixed top-12 left-7 bg-black text-white p-2 transition-all duration-300 z-0 translate-x-40">☰</button>
+    <aside id="sidebar" class="fixed top-12 left-0 h-screen w-48 bg-gray-800 text-white p-4 transition-transform duration-300 z-0 translate-x-0">
+      <a href="#section1" class="mb-2 side">- School</a>
+      <a href="#section2" class="mb-2 side">- Childhood</a>
+      <a href="#section3" class="mb-2 side">- Current</a>
+    </aside>
+  </div>
+
+
+  <main id="main" class="ml-48 pt-8 transition-all duration-300">
+
+    <div id="section1" class="pageSize">
+      <div class="title">School</div>
+      <div class="flex flex-col lg:flex-row gap-6 px-4 lg:px-20 items-center">
+        <div class="slider flex-1 min-w-[160px] max-w-[350px] mx-8 lg:mx-0 aspect-square" data-images="Pictures/images/1.png, Pictures/images/2.png, Pictures/images/3.png">
+          <img src="Pictures/images/1.png" class="w-full object-cover rounded-xl">
+        </div>
+        <div class="text-Background flex-1 min-w-[160px] max-w-[450px]"><p class="text">I spent the entirety of my life from pre-school up until my highschool at the same institution, JAC School Surabaya.<br><br>Most of my english speaking skill were used at this institution as JAC was an international school that used the IELTS system.</p></div>
+        <div class="slider flex-1 min-w-[160px] max-w-[350px] mx-8 lg:mx-0 aspect-square" data-images="Pictures/images/4.png, Pictures/images/5.png">
+          <img src="Pictures/images/4.png" class="w-full object-cover rounded-xl">
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    <div id="section2" class="pageSize bg-[#C2C2C2]">
+      <div class="title">Childhood</div>
+      <div class="flex flex-col lg:flex-row gap-6 px-4 lg:px-20 items-center">
+        <div class="slider flex-1 min-w-[120px] max-w-[262px] mx-8 lg:mx-0 aspect-[3/4]" data-images="Pictures/images/6.png, Pictures/images/7.png">
+          <img src="Pictures/images/6.png" class="w-full h-full object-cover rounded-xl">
+        </div>
+        <div class="text-Background flex-1 min-w-[160px] mx-8 lg:mx-0 lg:max-w-[350px]"><p class="text">I spent my early childhood going to a wide variety of places, some of which i still remember to this day. I was scared of barbers back in the day so my hair grew out when i was young</p></div>
+        <div class="slider flex-1 min-w-[160px] max-w-[350px] mx-8 lg:mx-0 aspect-square" data-images="Pictures/images/8.png, Pictures/images/9.png, Pictures/images/11.png, Pictures/images/12.png">
+          <img src="Pictures/images/8.png" class="w-full object-cover rounded-xl">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="section3" class="pageSize">
+      <div class="title">Current</div>
+      <div class="flex flex-col lg:flex-row gap-6 px-4 lg:px-20 items-center">
+        <div class="slider flex-1 min-w-[160px] max-w-[350px] mx-8 lg:mx-0 aspect-square" data-images="Pictures/images/18.png, Pictures/images/13.png, Pictures/images/14.png">
+          <img src="Pictures/images/18.png" class="w-full object-cover rounded-xl">
+        </div>
+        <div class="text-Background flex-1 min-w-[160px] max-w-[350px] mx-8 lg:mx-0"><p class="text">I changed my haircut from what i had back then. Back then i had a bowlcut apperantly and then i eventually went for a standard straight cut style.</p></div>
+        <div class="slider flex-1 min-w-[160px] max-w-[350px] mx-8 lg:mx-0 aspect-square" data-images="Pictures/images/15.png, Pictures/images/16.png, Pictures/images/17.png">
+          <img src="Pictures/images/15.png" class="w-full object-cover rounded-xl">
+        </div>
+      </div>
+    </div>
+    </main>
+<script src="JavaScript.js"></script>
+</body>
+</html>
